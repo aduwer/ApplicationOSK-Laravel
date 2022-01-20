@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pojemnik {
+    height: 9em;
+    width: 9em;
+    background-color: #ffffff;
+    position: absolute;
+    /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+    border-radius: 8px;
+    /* box-shadow: 20px 20px 40px rgb(17, 16, 16); */
+    display: grid;
+    place-items: center;
+}
+
+.circular-progress {
+    position: relative;
+    height: 7em;
+    width: 7em;
+    background-color: rgb(189, 45, 20);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.value-container {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    color: #000000;
+}
